@@ -1,5 +1,3 @@
-import javax.swing.text.AbstractDocument.LeafElement;
-
 class Node {
     int data;
     Node next;
