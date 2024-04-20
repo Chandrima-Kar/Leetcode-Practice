@@ -70,8 +70,7 @@ class Solution {
                 j--;
             else {
                 if (Character.toLowerCase(firstchar) != Character.toLowerCase(lastchar))// after converting to lowercase
-                                                                                        // we need to chcek if they are
-                                                                                        // equal or not
+                                                                                        // we need to chcek if they are equal or not                                                                    
                     return false;
                 i++;// if yes move the pointers
                 j--;
