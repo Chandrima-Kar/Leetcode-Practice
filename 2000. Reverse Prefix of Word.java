@@ -33,23 +33,23 @@
  * 
  */
 
-
- class Solution {
-    public String reversePrefix(String word, char ch) 
-    {
-    String str1="",str2="",str3="";
-    for(int i=0;i<word.length();i++){
-        if(word.charAt(i)==ch){
-            str1=word.substring(0,i+1);
-            str2=word.substring(i+1);
-            break;
+class Solution {
+    public String reversePrefix(String word, char ch) {
+        String str1 = "", str2 = "", str3 = "";
+        for (int i = 0; i < word.length(); i++) {
+            if (word.charAt(i) == ch) {
+                str1 = word.substring(0, i + 1);
+                str2 = word.substring(i + 1);
+                break;
+            }
+            str2 = word;
         }
-        str2=word;
-     }  
-    for(int i=str1.length()-1;i>=0;i--){
-        str3=str3+str1.charAt(i);
-    } 
-    str3=str3+str2;
-    return str3;
+        for (int i = str1.length() - 1; i >= 0; i--) {
+            str3 = str3 + str1.charAt(i);
+        }
+        str3 = str3 + str2;
+        return str3;
     }
 }
+
+// https://leetcode.com/problems/reverse-prefix-of-word/?envType=daily-question&envId=2024-05-01
